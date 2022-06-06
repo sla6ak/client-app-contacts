@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/client-app-contacts/static/css/main.665ea5a0.css",
+    "main.js": "/client-app-contacts/static/js/main.0878ee27.js",
+    "static/js/806.d79dbb1d.chunk.js": "/client-app-contacts/static/js/806.d79dbb1d.chunk.js",
+    "static/js/994.731ee958.chunk.js": "/client-app-contacts/static/js/994.731ee958.chunk.js",
+    "static/js/400.0416a961.chunk.js": "/client-app-contacts/static/js/400.0416a961.chunk.js",
+    "static/js/166.daf3bfc6.chunk.js": "/client-app-contacts/static/js/166.daf3bfc6.chunk.js",
+    "static/js/284.992a0873.chunk.js": "/client-app-contacts/static/js/284.992a0873.chunk.js",
+    "index.html": "/client-app-contacts/index.html",
+    "main.665ea5a0.css.map": "/client-app-contacts/static/css/main.665ea5a0.css.map",
+    "main.0878ee27.js.map": "/client-app-contacts/static/js/main.0878ee27.js.map",
+    "806.d79dbb1d.chunk.js.map": "/client-app-contacts/static/js/806.d79dbb1d.chunk.js.map",
+    "994.731ee958.chunk.js.map": "/client-app-contacts/static/js/994.731ee958.chunk.js.map",
+    "400.0416a961.chunk.js.map": "/client-app-contacts/static/js/400.0416a961.chunk.js.map",
+    "166.daf3bfc6.chunk.js.map": "/client-app-contacts/static/js/166.daf3bfc6.chunk.js.map",
+    "284.992a0873.chunk.js.map": "/client-app-contacts/static/js/284.992a0873.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.665ea5a0.css",
+    "static/js/main.0878ee27.js"
+  ]
+}
