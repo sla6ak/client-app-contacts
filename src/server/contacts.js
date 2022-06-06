@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-const PORT = process.env.PORT || "http://localhost:5000";
+const PORT = process.env.PORT || "https://list-contacts-test.herokuapp.com";
 
 // Define a service using a base URL and expected endpoints
 export const contactApi = createApi({
