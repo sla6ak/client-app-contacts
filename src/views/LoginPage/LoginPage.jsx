@@ -1,26 +1,13 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import CssBaseline from "@mui/material/CssBaseline";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
+import { Avatar, Button, CssBaseline, TextField, Grid, Box, Typography, Container } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-// import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { newToken } from "redux/sliceToken";
 import { useLoginUserMutation } from "server/contacts";
-import { linkActiv } from "components/utilits/linkActiv";
+import { linkActiv } from "utilits/linkActiv";
 import { isAuth } from "redux/sliceAuth";
-
 import { toast } from "react-toastify";
-
-// import 'react-toastify/dist/ReactToastify.css';
 
 const LoginPage = () => {
     const dispatch = useDispatch();
@@ -57,7 +44,7 @@ const LoginPage = () => {
                     alignItems: "center",
                 }}
             >
-                <Avatar sx={{ m: 1, bgcolor: "#759ab6" }}>
+                <Avatar sx={{ m: 1, bgcolor: "#009688" }}>
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
@@ -74,8 +61,10 @@ const LoginPage = () => {
                         name="email"
                         autoComplete="email"
                         autoFocus
+                        sx={{ mt: 6 }}
                     />
                     <TextField
+                        sx={{ mt: 8 }}
                         margin="normal"
                         required
                         fullWidth
@@ -85,8 +74,7 @@ const LoginPage = () => {
                         id="password"
                         autoComplete="current-password"
                     />
-                    <FormControlLabel control={<Checkbox value="remember" color="primary" />} label="Remember me" />
-                    <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
+                    <Button type="submit" fullWidth variant="contained" sx={{ mt: 8, mb: 8 }}>
                         Sign In
                     </Button>
                     <Grid container justifyContent="flex-end">

@@ -7,6 +7,8 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { persistor } from "./redux/store";
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "./constants/theme";
 import "react-toastify/dist/ReactToastify.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -14,7 +16,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <BrowserRouter basename="/client-app-contacts/">
-                    <App />
+                    <ThemeProvider theme={theme}>
+                        <App />
+                    </ThemeProvider>
                 </BrowserRouter>
             </PersistGate>
         </Provider>

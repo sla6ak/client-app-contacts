@@ -65,7 +65,7 @@ export const contactApi = createApi({
         }),
 
         //запрос который удаляет актуальный токен выданый пользователю на бекенде
-        unLoginUser: builder.mutation({
+        logoutUser: builder.mutation({
             query: () => ({
                 url: `/users/logout`,
                 method: "POST",
@@ -95,5 +95,5 @@ export const {
     useGetIsActivUserQuery,
     useRegistrationUserMutation,
     useLoginUserMutation,
-    useUnLoginUserMutation,
+    useLogoutUserMutation,
 } = contactApi;

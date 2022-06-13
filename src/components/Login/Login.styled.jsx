@@ -1,10 +1,13 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const BoxLogin = styled.div`
-  display: flex;
-  width: 30%;
-  justify-content: space-around;
-  @media (max-width: 767px) {
-    width: 60%;
-  }
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    @media (min-width: 767px) {
+        width: 50%;
+    }
+    @media (min-width: 1200px) {
+        width: 30%;
+    }
 `;
