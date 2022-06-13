@@ -5,6 +5,10 @@ import { useSelector } from "react-redux";
 import { useLogoutUserMutation } from "server/contacts";
 import { NavLink } from "react-router-dom";
 import { linkActiv } from "../../utilits/linkActiv";
+import styled from "@emotion/styled";
+const LogoutButton = styled.div`
+    cursor: pointer;
+`;
 
 export function Logout() {
     const auth = useSelector((state) => state.auth);
@@ -19,7 +23,8 @@ export function Logout() {
             <NavLink style={linkActiv} to="/docs">
                 Docs
             </NavLink>
-            <div
+            <LogoutButton
+                style={{}}
                 onClick={() => {
                     logoutUser();
                     dispatch(newToken(""));
@@ -27,7 +32,7 @@ export function Logout() {
                 }}
             >
                 Logout
-            </div>
+            </LogoutButton>
         </>
     );
 }
